@@ -2,7 +2,8 @@
 #include <chrono>
 #include <ctime>
 #include "date.h"
-
+#include <thread>
+#include <Windows.h>
 
 auto currentTime = std::chrono::system_clock::now();
 auto currentTimeInSec = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
@@ -49,6 +50,7 @@ void Date::getday()
 			break;
 		case 6:
 			std::cout << "o dia da semana e (SABADO)" << std::endl;
+			break;
 		default:
 			std::cout << "retorno invalido" << std::endl;
 		}
@@ -84,6 +86,16 @@ void Date::getyear()
 	{
 		std::cerr << "erro ao obter ano atual." << std::endl;
 	}
+}
+void Date::alarm(int hours, int minutes)
+{
+	std::chrono::system_clock::time_point alarmTime = currentTime + std::chrono::hours(hours) + std::chrono::minutes(minutes);
+	while (std::chrono::system_clock::now() < alarmTime)
+	{
+		Sleep(100);
+		std::this_thread::sleep_for(std::chrono::seconds(1));
+	}
+	std::cout << "alarme acionado" << std::endl;
 }
 
 

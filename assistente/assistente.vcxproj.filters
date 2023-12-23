@@ -21,7 +21,7 @@
     <ClCompile Include="date.cpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
-    <ClCompile Include="cronometer.cpp">
+    <ClCompile Include="clock.cpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="date.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
-    <ClInclude Include="cronometer.h">
+    <ClInclude Include="clock.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

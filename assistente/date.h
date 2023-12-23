@@ -8,6 +8,7 @@ public:
 	void getday();
 	void getmoth();
 	void getyear();
+	void alarm(int hours, int minutes);
 
 };
 
