@@ -1,4 +1,6 @@
 #pragma once
+#include "tts.h"
+#include "sstream"
 
 class Clock
 {
@@ -8,5 +10,7 @@ public:
 	void cronometer();
 	void cronometerP();
 private:
+	std::stringstream ss;
+	Basictts* tt1 = new Basictts();
 	bool control = false;
 };
