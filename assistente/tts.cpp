@@ -17,7 +17,6 @@ void Basictts::send_tts(std::string text)
     }
 
     pVoice->Speak(wideText.c_str(), 0, NULL);
-    Sleep(5000);
     pVoice->Release();
     CoUninitialize();
 }

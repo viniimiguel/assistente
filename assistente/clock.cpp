@@ -4,8 +4,7 @@
 #include <Windows.h>
 #include <string>
 
-//função com problemas arrumar depois
-//descrição do problema: o tts nao esta funcionando corretamente com iterações devido ao tempo de espera Sleep provavelmente o Sleep esta mais rapido doque o tts reproduz
+
 void Clock::temporizerc(int time)
 {
 	for (int i=0; i < time; i++)
@@ -22,7 +21,9 @@ void Clock::temporizerdc(int time)
 	for (int i=time; i != 0; i--)
 	{
 		Sleep(1000);
-		std::cout << i << std::endl;
+		ss << i;
+		std::string tprzdc = ss.str();
+		tt1->send_tts(tprzdc);
 	}
 }
 
