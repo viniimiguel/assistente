@@ -27,6 +27,9 @@
     <ClCompile Include="tts.cpp">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
+    <ClCompile Include="stt.cpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="date.h">
@@ -36,6 +39,9 @@
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
     <ClInclude Include="tts.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
+    <ClInclude Include="stt.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,5 @@
 #include <iostream>
 #include "clock.h"
-#include <thread>
 #include <Windows.h>
 #include <string>
 
